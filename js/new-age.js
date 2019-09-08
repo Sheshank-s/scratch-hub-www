@@ -33,9 +33,14 @@
       document.getElementById("navbarLogo").src = "img/logocolored.png";
       document.getElementById("navbarText").style.color = "purple";
     } else {
+      if (window.innerWidth > 990) {
+        document.getElementById("navbarLogo").src = "img/logo.png";
+        document.getElementById("navbarText").style.color = "white";
+      } else {
+        document.getElementById("navbarLogo").src = "img/logocolored.png";
+        document.getElementById("navbarText").style.color = "purple";
+      }
       $("#mainNav").removeClass("navbar-shrink");
-      document.getElementById("navbarLogo").src = "img/logo.png";
-      document.getElementById("navbarText").style.color = "white";
     }
   };
   // Collapse now if page is not at top

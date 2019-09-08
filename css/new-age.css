@@ -78,6 +78,11 @@ section h2 {
   letter-spacing: 1px;
 }
 
+#navbarText {
+
+  color: purple;
+}
+
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
   color: #fcbd20;
 }
