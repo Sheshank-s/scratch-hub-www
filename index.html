@@ -1,13 +1,222 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Scratch Hub</title>
-  </head>
-  <body>
-    <h1>Scratch Hub</h1>
-    <p>This site will be updated in the future. For now it's just for the privacy policy.</p>
-    <br>
-    <p>This is the link to the app:  <a href="https://apps.apple.com/us/app/scratch-hub/id1478176533"> https://apps.apple.com/us/app/scratch-hub/id1478176533</a>
-  </body>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Scratch Hub</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/new-age.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top" style="color: white" id="navbarText">
+        <img id="navbarLogo" src="img/logo.png" style="height: 50px" />
+        Scratch Hub
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mb-5">Scratch Hub is an app that has lots of tools that you can use to make your Scratch experience better!</h1>
+            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+          </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+          <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device">
+                <div class="screen">
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                  <img id="phoneImage" src="img/1.png" class="img-fluid" alt="0">
+                </div>
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script>
+  setInterval(function () {
+    var curr = parseInt(document.getElementById("phoneImage").alt) + 1;
+    if (curr == 7) {
+      curr = 1;
+    }
+    document.getElementById("phoneImage").src = "img/" + curr + ".png";
+    document.getElementById("phoneImage").alt = curr.toString();
+    document.getElementById("phoneImage2").src = "img/" + curr + ".png";
+    document.getElementById("phoneImage2").alt = curr.toString();
+  }, 2000);
+  </script>
+
+  <section class="download bg-primary text-center" id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="section-heading">Download Scratch Hub now!</h2>
+          <p>The app is available on Google play and Apple store! Download now to get started</p>
+          <div class="badges">
+            <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+            <a class="badge-link" href="https://apps.apple.com/us/app/scratch-hub/id1478176533"><img src="img/app-store-badge.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container" id="invert">
+      <div class="section-heading text-center">
+        <h2>Scratch Hub Features</h2>
+        <p class="text-muted">Check out what you can do with this app!</p>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 my-auto">
+          <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device">
+                <div class="screen">
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                  <img id="phoneImage2" src="img/1.png" class="img-fluid" alt="0">
+                </div>
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 my-auto">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fas fa-check-circle text-primary"></i>
+                  <h3>Online/Offline Status</h3>
+                  <p class="text-muted">Set your status, and view other people's status on Scratch!</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fas fa-chart-bar text-primary"></i>
+                  <h3>Scratch Stats Trends</h3>
+                  <p class="text-muted">Get weekly updates and see how many views/loves/faves you gain!</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fas fa-user-minus text-primary"></i>
+                  <h3>Unfollower Detector</h3>
+                  <p class="text-muted">See who has unfollowed your scratch account since your last save!</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fas fa-list text-primary"></i>
+                  <h3>View Top Scratchers</h3>
+                  <p class="text-muted">Explore the top scratchers list, and see your rank on the list!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact bg-primary" id="contact">
+    <div class="container">
+      <h2>Send us a message!</h2>
+      <p class="text-muted">Questions, Comments, Concerns, or Bug reports? Contact us!</p>
+      <ul class="list-inline list-social">
+        <li class="list-inline-item social-twitter">
+          <a href="https://scratch.mit.edu/users/PackersRuleGoPack">
+            <span id="scratch-label">S</span>
+          </a>
+        </li>
+        <li class="list-inline-item social-google-plus">
+          <a href="mailto:sheshank@outlook.com">
+            <i class="far fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Scratch Hub 2019. All Rights Reserved.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="privacy-policy.html">Privacy</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/new-age.js"></script>
+
+</body>
+
 </html>
